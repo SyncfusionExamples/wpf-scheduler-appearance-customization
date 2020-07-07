@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace AppointmentCustomization
+namespace AppearanceCustomization
 {
     /// <summary>
     /// Appointment view customization view model.

@@ -1,15 +1,15 @@
-﻿<Window x:Class="AppointmentCustomization.MainWindow"
+﻿<Window x:Class="AppearanceCustomization.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AppointmentCustomization"
+        xmlns:local="clr-namespace:AppearanceCustomization"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
         xmlns:skinmanager ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
         skinmanager:SfSkinManager.VisualStyle="MaterialLight"
         mc:Ignorable="d"
-        Title="AppointmentCustomization Demo"
+        Title="AppearanceCustomization Demo"
         Icon="App.ico"
         WindowStartupLocation="CenterScreen">
     <Window.DataContext>

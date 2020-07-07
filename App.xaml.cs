@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Text;
 using System.Windows;
 
-namespace AppointmentCustomization
+namespace AppearanceCustomization
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace AppointmentCustomization
+namespace AppearanceCustomization
 {
     /// <summary>   
     /// Represents custom data properties.   

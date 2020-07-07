@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace AppointmentCustomization
+namespace AppearanceCustomization
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
