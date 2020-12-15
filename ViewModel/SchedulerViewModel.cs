@@ -67,20 +67,20 @@ namespace AppearanceCustomization
                 var day = random.Next(1, 30);
                 var hour = random.Next(9, 14);
                 var newEvent = new Events();
-                newEvent.EventName = this.eventCollection[random.Next(0, 4)];
+                newEvent.EventName = this.eventCollection[random.Next(0, 9)];
                 newEvent.From = new DateTime(year, month, day, hour, 0, 0);
                 newEvent.To = newEvent.From.AddHours(1);
-                newEvent.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(this.colorCollection[random.Next(0, 15)]));
+                newEvent.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(this.colorCollection[random.Next(0, 8)]));
                 this.Appointments.Add(newEvent);
             }
 
             for (int i = 0; i < 6; i++)
             {
                 var allDayEvent = new Events();
-                allDayEvent.EventName = this.eventCollection[random.Next(0, 5)];
+                allDayEvent.EventName = this.eventCollection[random.Next(0, 9)];
                 allDayEvent.From = this.startTimeCollection[random.Next(0,10)];
                 allDayEvent.To = allDayEvent.From.AddHours(1);
-                allDayEvent.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(this.colorCollection[random.Next(0, 15)]));
+                allDayEvent.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(this.colorCollection[random.Next(0, 8)]));
                 allDayEvent.IsAllDay = true;
                 this.Appointments.Add(allDayEvent);
             }
@@ -93,10 +93,15 @@ namespace AppearanceCustomization
         {
             this.eventCollection = new List<string>();
             this.eventCollection.Add("Conference");
-            this.eventCollection.Add("System Troubleshoot");
-            this.eventCollection.Add("Birthday");
-            this.eventCollection.Add("Checkup");
+            this.eventCollection.Add("Business Meeting");
             this.eventCollection.Add("Conference");
+            this.eventCollection.Add("Medical check up");
+            this.eventCollection.Add("Consulting");
+            this.eventCollection.Add("Project Status Discussion");
+            this.eventCollection.Add("Client Meeting");
+            this.eventCollection.Add("General Meeting");
+            this.eventCollection.Add("Yoga Therapy");
+            this.eventCollection.Add("GoToMeeting");
 
             this.startTimeCollection = new List<DateTime>();
             this.startTimeCollection.Add(DateTime.Now.Date.AddHours(10));
@@ -126,15 +131,8 @@ namespace AppearanceCustomization
             this.colorCollection.Add("#FFF09609");
             this.colorCollection.Add("#FF339933");
             this.colorCollection.Add("#FF00ABA9");
-            this.colorCollection.Add("#FFE671B8");
-            this.colorCollection.Add("#FF1BA1E2");
-            this.colorCollection.Add("#FFD80073");
+           this.colorCollection.Add("#4F67FF");
             this.colorCollection.Add("#FFA2C139");
-            this.colorCollection.Add("#FFA2C139");
-            this.colorCollection.Add("#FFD80073");
-            this.colorCollection.Add("#FF339933");
-            this.colorCollection.Add("#FFE671B8");
-            this.colorCollection.Add("#FF00ABA9");
         }
         #endregion
     }
