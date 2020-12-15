@@ -64,8 +64,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Helper\SubjectToImageSourceConverter.cs" />
+    <Compile Include="Helper\ImageTemplateSelector.cs" />
     <Compile Include="ViewModel\SchedulerViewModel.cs" />
+    <Page Include="Helper\SubjectImagePaths.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -105,12 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\cake_schedule.png" />
-    <Resource Include="Images\Conference_schedule.png" />
-    <Resource Include="Images\Stethoscope.png" />
-    <Resource Include="Images\Troubleshoot.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App.ico" />
